@@ -38,3 +38,9 @@ body{
     
    
 }
+.pbtn{
+    padding: 10px 40px;
+    background-color: orange;
+    color:white;
+    border-radius: 5px;
+}
