@@ -1,112 +1,240 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159411627-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-159411627-1');
-    </script> -->
-    <!-- Caching Disabler-->
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Expires" content="-1">
-        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-    
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <meta name="Description"
-        content="AYAT ULLAH | MERN | AI | Python | UI/UX | React | Web Developer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AYAT ULLAH</title>
-    <link rel="icon" type="image/png" href="">
-    <link rel="apple-touch-icon" href="assets/img/favicon.png">
-    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
-    <meta name="theme-color" content="#FFE1C4">
-    <script src="assets/js/app.js"></script>
-    <link rel="manifest" href="manifest.json">
 </head>
 
-<body id="index-body" style="overflow: hidden;">
-    <div>
-        <nav class="nav-desk">
-            <center>
-                <div class="nav-logo">
-                    <a href="index.html"><img id="logo" src="assets/img/logo2.png"></a>
-                </div>
-                <div class="nav-items">
-                    <ul>
-                        <li><span><a href="index.html">About</a></span></li>
-                        <li><span><a href="work.html">Work</a></span></li>
-                        <li><span><a href="index.html">Uses</a></span></li>
-                        <li><span><a href="contact.html">Contact</a></span></li>
-                    </ul>
-                </div>
-
-            </center>
+<body class="px-10">
+    <!-- Navbar -->
+    <div class="flex justify-between  py-5" id="home">
+        <div>
+            <h1 class="text-3xl uppercase">AYAT <span class="text-orange-400">ULLAH</span></h1>
+        </div>
+        <nav class=" hidden lg:flex space-x-5 text-2xl">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
         </nav>
-        <div class="animated fadeIn row" style="width:100vw;animation-duration: 1.5s;">
-            <div class="col-md-6" id="left-hero">
-                <h1 class="hero-tag"><span class="typer" id="main" data-words="Hi, I'm Ayat." data-delay="100"
-                        data-deleteDelay="1000" data-loop="1" style="color:blue!important;"></span>
-                    &nbsp;</h1>
-                <p class="hero-des">I make elegantly professional <b>web</b> apps  for a living
-                    and also design <b>user experiences</b>.
-                    If you want me to do any one of these for you, get in touch with me here.
+        <!-- Navbar 2 -->
+        <nav class="nav2 text-2xl space-y-8" id="navid">
+            <svg id="closenav" xmlns="http://wwws.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="cursor-pointer w-6 h-6 absolute top-5 right-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m-15 0l15 15" />
+            </svg>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+        <button class="d-block lg:hidden" id="navbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+        </button>
+
+    </div>
+    <!-- Introduction -->
+    <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 py-10" >
+        <div class="text-center flex flex-col justify-center items-center space-y-5">
+            <h1 class="text-xl">I am <span class="text-5xl"> AYAT ULLAH</span></h1>
+            <div class="flex space-x-10 py-5 justify-center">
+                <button class="px-10 py-3 bg-orange-500 text-white uppercase rounded">Hire me</button>
+                <button class="px-10 py-3 bg-blue-500 text-white uppercase rounded">Resume</button>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="./img/undraw_coding_re_iv62.svg" alt="">
+        </div>
+    </div>
+    <!-- About me -->
+    <div class="py-10" id="about">
+        <h1 class="text-4xl uppercase text-center py-5  ">About Me</h1>
+        <h1 class="border-b-4 border-blue-500 mx-auto" style="width: 20%;"></h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-5">
+            <div class="flex justify-center items-center">
+                <img src="./img/undraw_profile_pic_ic-5-t.svg" class="w-1/2" alt="">
+            </div>
+            <div class="flex justify-center items-center">
+                <p class="p-5 text-2xl ">
+                    Skilled Full-Stack Developer looking to apply for the position of a Junior
+                    Full-Stack Developer. Currently Pursuing Bachelor’s Degree in Computer
+                    Science.
                 </p>
-                <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-                <a href="https://drive.google.com/file/d/1hUPaRjcdE_6guiNirJZaG00gjQnEI9Ei/view" class="animated text-white bounce delay-4s d-inline-block learn-btn" target="_blank">
-                    Resume
-                </a>
-                <a href="contact.html"><button class="contact-btn">
-                        Contact Me
-                    </button></a>
-                <div class="social-icons">
-                    <a target="_blank" href="mailto:ayatullah7755@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a target="_blank" href="https://github.com/aytullahdev"><i class="fab fa-github"></i></a>
-                    <a target="_blank" href="https://linkedin.com/in/ayat-ullah"><i class="fab fa-linkedin"></i></a>
-                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills -->
+
+    <div class="grid grid-cols-1   lg:grid-cols-2 py-10" id="skills">
+
+        <div class="text-center">
+            <h1 class="text-4xl uppercase text-center py-5  ">My Skills</h1>
+            <h1 class="border-b-4 border-orange-500 mx-auto" style="width: 30%;"></h1>
+            <div class="flex justify-center items-center py-10">
+                <p class="p-5 text-2xl text-left leading-10 ">
+                    I am a Web Developer and a Competative programmer. I have good skills in
+                    Coding. I also work part-time Freelancer at Upwork
+                </p>
             </div>
 
-            <div class="col-md-6" id="hero-right">
-                <img id="hero-img" src="assets/img/undraw_code_review_l1q9.svg">
+        </div>
+        <div class="">
+            <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">Html <span
+                    class=" text-xs text-yellow-400">80%</span>
+            </h1>
+            <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                <div class=" w-full h-full bg-gray-200 absolute "></div>
+                <div class=" h-full bg-yellow-400 sm:bg-green-500 absolute" style="width:80%"></div>
             </div>
+
+            <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">Tailwind CSS <span
+                    class=" text-xs text-red-500">70%</span></h1>
+            <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                <div class=" w-full h-full bg-gray-200 absolute "></div>
+                <div class=" h-full bg-red-500 sm:bg-yellow-400 absolute" style="width:70%"></div>
+            </div>
+            <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">MongoDB <span
+                    class=" text-xs text-green-500">60%</span>
+            </h1>
+            <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                <div class=" w-full h-full bg-gray-200 absolute "></div>
+                <div class=" h-full bg-green-500 sm:bg-red-500 absolute" style="width:60%"></div>
+            </div>
+            <h1 class="pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">React <span
+                    class=" text-xs text-gray-600">70%</span></h1>
+            <div class="mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                <div class=" w-full h-full bg-gray-200 absolute "></div>
+                <div class=" h-full bg-gray-600 sm:bg-indigo-500 absolute" style="width:70%"></div>
+            </div>
+            <h1 class=" pl-10 pt-2 sm:pt-5 text-black sm:pl-80  pt-5 ">Java Script <span
+                    class=" text-xs text-indigo-500">60%</span></h1>
+            <div class="mb-10 mt-2 ml-10 sm:ml-80 h-4 relative w-60 rounded-full overflow-hidden">
+                <div class=" w-full h-full bg-gray-200 absolute "></div>
+                <div class=" h-full bg-indigo-500 sm:bg-gray-600 absolute" style="width:60%"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects" class="py-10">
+        <h1 class="text-4xl uppercase text-center py-5  ">My Projects</h1>
+        <h1 class="border-b-4 border-blue-500 mx-auto" style="width: 30%;"></h1>
+        <!-- Cards  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-5">
+            <div class="card bg-blue-500">
+
+            </div>
+            <div class="card bg-orange-500">
+
+            </div>
+            <div class="card bg-green-500">
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="text-4xl uppercase text-center py-5  ">Client Reviews</h1>
+        <h1 class="border-b-4 border-orange-500 mx-auto " style="width: 30%;"></h1>
+
+        <!-- Slider -->
+        <!-- Slider main container -->
+        <div class="swiper my-10">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
 
         </div>
     </div>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
+    <!-- Contact with me -->
+    <h1 class="text-4xl uppercase text-center py-5  ">Contact</h1>
+    <h1 class="border-b-4 border-orange-500 mx-auto mb-5" style="width: 30%;"></h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div>
+            <img src="./img/undraw_delivery_address_re_cjca.svg" alt="">
         </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#" style="text-decoration: line-through;">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="work.html">Work</a></li>
-                        <li><a href="#">Uses</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+        <div>
+            <form class="w-full max-w-lg mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
+                        <label for="firstName" class="block text-xs text-gray-700 font-bold uppercase tracking-wider">First
+                            Name</label>
+                        <input type="text" id="firstName" name="fname"
+                            class="block mt-2 py-3 px-4 rounded text-gray-700 w-full border-blue-500 border outline-none "
+                            placeholder="Jane">
+                        <p class="text-sm text-blue-500 italic mt-2">Please fill out the field</p>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 md:mb-0">
+                        <label for="LastName" class="block text-xs text-gray-700 font-bold uppercase tracking-wider">Last
+                            Name</label>
+                        <input type="text" id="LastName" name="fname"
+                            class="block mt-2 py-3 px-4 rounded text-gray-700 w-full border-blue-500 border outline-none "
+                            placeholder="Angle">
+                    </div>
                 </div>
-            </div>
+                <div class="flex">
+                    <div class="w-full px-3">
+                        <label for="email"
+                            class="block text-sm text-gray-700 font-bold uppercase tracking-wider mt-4">Email</label>
+                        <input type="text" class="block mt-2  py-3 px-4 w-full border-blue-700 rounded border outline-none"
+                            placeholder="email">
+                        <p class="text-sm text-blue-500 italic mt-2">Please fill out the email</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="w-full px-2">
+                        <label for=""
+                            class="block text-sm text-gray-700 font-bold uppercase tracking-wider mt-4">Message</label>
+                        <textarea
+                            class="block mt-2  py-3 px-4 w-full border-blue-700 rounded border outline-none resize-none appearance-none"
+                            name="" id="" cols="30" rows="5" placeholder="Enter your message here"></textarea>
+                        <p class="text-sm text-blue-500 italic mt-2">Please fill out the field</p>
+                    </div>
+                </div>
+                <div class="md:flex mid:items-center">
+                    <div>
+                        <button
+                            class="bg-blue-400 shadow text-white py-2 px-4 rounded mx-2 mt-4 hover:bg-blue-700">Send</button>
+                    </div>
+    
+                </div>
+    
+            </form>
         </div>
     </div>
-    <div class="legal">
-        <a href="legal.html">legal</a>
-    </div>
+   <a href="#home" class="fixed  bottom-5 right-5 bg-gray-100 animate-pulse rounded-full">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
+      </svg>
+   </a>
+      
+    <footer class="text-black">
+        <p class="text-3xl text-center py-5">AYAT ULLAH</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
